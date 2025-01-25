@@ -2,7 +2,7 @@ import pandas as pd, numpy as np, scipy.fft as fft, matplotlib.pyplot as plt, so
 from scipy.signal import find_peaks
 
 def FileIn():
-    file_path = 'testfile.txt'
+    file_path = 'c-major-chord.txt'
     df = pd.read_csv(file_path, delim_whitespace=True, header=None, skiprows = 1)   # data from the csv file
     sounddata = df.to_numpy(dtype=float)    # Convert the data to a 2d numpy array
     sounddata[:,1] = (2*(sounddata[:,1]-np.min(sounddata[:,1]))/(np.max(sounddata[:,1])-np.min(sounddata[:,1])))-1  # Normalize the signal
