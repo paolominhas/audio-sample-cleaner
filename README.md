@@ -1,4 +1,4 @@
-## datahandlingproject2024
+## Data Handling Project 2024
 # What this code does:
 This code processes audio data:
 - Takes audio input from Arduino
@@ -9,4 +9,4 @@ This code processes audio data:
 - An inverse FFT is applied to get a wave made up only of the main frequencies
 - The sound is played
 
-This code was originally for a university course but is now spiced up with some more interesting features.
+This code was originally for a university course but has been altered since. The final code here is therefore independent to the original project.
